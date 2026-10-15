@@ -1,0 +1,113 @@
+# Danh mục các tạp chí y khoa uy tín hàng đầu (High-Impact & Society Journals)
+# Phân nhóm theo chuyên ngành & tổ chức khoa học
+
+groups:
+  general_medicine:
+    name: "General Medicine / Đa khoa tổng quát"
+    tier: 1
+    journals:
+      - title: "The New England Journal of Medicine"
+        short: "NEJM"
+        iso_abbr: "N Engl J Med"
+        pubmed_query: '("N Engl J Med"[journal] OR "New England Journal of Medicine"[journal])'
+        weight: 100
+      - title: "The Lancet"
+        short: "The Lancet"
+        iso_abbr: "Lancet"
+        pubmed_query: '("Lancet"[journal] OR "The Lancet"[journal])'
+        weight: 100
+      - title: "The Lancet Sub-journals"
+        short: "Lancet Specialty"
+        iso_abbr: "Lancet"
+        pubmed_query: '("Lancet Oncol"[journal] OR "Lancet Infect Dis"[journal] OR "Lancet Neurol"[journal] OR "Lancet Diabetes Endocrinol"[journal] OR "Lancet Respir Med"[journal] OR "Lancet Haematol"[journal] OR "Lancet Digital Health"[journal])'
+        weight: 90
+      - title: "JAMA: The Journal of the American Medical Association"
+        short: "JAMA"
+        iso_abbr: "JAMA"
+        pubmed_query: '("JAMA"[journal] OR "JAMA Intern Med"[journal] OR "JAMA Cardiol"[journal] OR "JAMA Oncol"[journal] OR "JAMA Neurol"[journal] OR "JAMA Pediatr"[journal])'
+        weight: 95
+      - title: "The BMJ (British Medical Journal)"
+        short: "BMJ"
+        iso_abbr: "BMJ"
+        pubmed_query: '("BMJ"[journal] OR "British Medical Journal"[journal])'
+        weight: 90
+      - title: "Annals of Internal Medicine"
+        short: "Ann Intern Med"
+        iso_abbr: "Ann Intern Med"
+        pubmed_query: '("Ann Intern Med"[journal] OR "Annals of Internal Medicine"[journal])'
+        weight: 90
+
+  cardiology_aha:
+    name: "Cardiology & Vascular (AHA / ACC / ESC)"
+    tier: 1
+    journals:
+      - title: "Circulation (AHA)"
+        short: "Circulation"
+        iso_abbr: "Circulation"
+        pubmed_query: '("Circulation"[journal] OR "Circ Res"[journal] OR "Circ Cardiovasc Qual Outcomes"[journal] OR "Circ Arrhythm Electrophysiol"[journal] OR "Circ Heart Fail"[journal])'
+        weight: 95
+      - title: "Journal of the American Heart Association (JAHA)"
+        short: "JAHA"
+        iso_abbr: "J Am Heart Assoc"
+        pubmed_query: '("J Am Heart Assoc"[journal])'
+        weight: 85
+      - title: "Stroke (AHA)"
+        short: "Stroke"
+        iso_abbr: "Stroke"
+        pubmed_query: '("Stroke"[journal])'
+        weight: 90
+      - title: "Journal of the American College of Cardiology (JACC)"
+        short: "JACC"
+        iso_abbr: "J Am Coll Cardiol"
+        pubmed_query: '("J Am Coll Cardiol"[journal] OR "JACC Heart Fail"[journal] OR "JACC Cardiovasc Interv"[journal])'
+        weight: 95
+      - title: "European Heart Journal (ESC)"
+        short: "EHJ"
+        iso_abbr: "Eur Heart J"
+        pubmed_query: '("Eur Heart J"[journal] OR "Eur J Heart Fail"[journal])'
+        weight: 95
+
+  hematology_ash:
+    name: "Hematology & Oncology (ASH / ASCO)"
+    tier: 1
+    journals:
+      - title: "Blood (American Society of Hematology - ASH)"
+        short: "Blood"
+        iso_abbr: "Blood"
+        pubmed_query: '("Blood"[journal] OR "Blood Adv"[journal])'
+        weight: 95
+      - title: "Journal of Clinical Oncology (ASCO)"
+        short: "JCO"
+        iso_abbr: "J Clin Oncol"
+        pubmed_query: '("J Clin Oncol"[journal])'
+        weight: 95
+      - title: "Leukemia"
+        short: "Leukemia"
+        iso_abbr: "Leukemia"
+        pubmed_query: '("Leukemia"[journal])'
+        weight: 90
+      - title: "Lancet Oncology & Lancet Haematology"
+        short: "Lancet Oncol/Haematol"
+        iso_abbr: "Lancet Oncol"
+        pubmed_query: '("Lancet Oncol"[journal] OR "Lancet Haematol"[journal])'
+        weight: 95
+
+  biomedical_top:
+    name: "Translational & High Impact Biomedical"
+    tier: 1
+    journals:
+      - title: "Nature Medicine"
+        short: "Nat Med"
+        iso_abbr: "Nat Med"
+        pubmed_query: '("Nat Med"[journal] OR "Nature Medicine"[journal])'
+        weight: 95
+      - title: "Science Translational Medicine"
+        short: "Sci Transl Med"
+        iso_abbr: "Sci Transl Med"
+        pubmed_query: '("Sci Transl Med"[journal])'
+        weight: 90
+      - title: "Cell"
+        short: "Cell"
+        iso_abbr: "Cell"
+        pubmed_query: '("Cell"[journal] OR "Cell Stem Cell"[journal] OR "Cell Metab"[journal])'
+        weight: 95

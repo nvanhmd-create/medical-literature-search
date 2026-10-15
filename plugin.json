@@ -1,0 +1,11 @@
+{
+  "name": "med-evidence-search",
+  "displayName": "Medical Evidence Search",
+  "description": "Tự động tìm kiếm, phân loại và tổng hợp y văn chuyên ngành từ các nguồn uy tín hàng đầu: PubMed, NEJM, The Lancet, JAMA, BMJ, AHA (Circulation), ASH (Blood)...",
+  "version": "1.0.0",
+  "suggestedPrompts": [
+    "Tìm kiếm các nghiên cứu mới nhất từ NEJM và The Lancet về [chủ đề]",
+    "Tổng hợp bằng chứng và hướng dẫn điều trị của AHA/ESC về [bệnh lý]",
+    "Tra cứu các thử nghiệm lâm sàng RCTs và bài báo Top-Tier về [thuốc/can thiệp]"
+  ]
+}

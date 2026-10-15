@@ -1,0 +1,50 @@
+# Cấu hình tìm kiếm mặc định
+search:
+  # Số lượng kết quả tối đa lấy về từ PubMed (mặc định 20)
+  max_results: 20
+  
+  # Khoảng năm tìm kiếm (0 = không giới hạn, ví dụ: 5 là 5 năm gần nhất)
+  years_back: 5
+  
+  # Chỉ tìm kiếm trong các tạp chí danh giá (Top-tier: NEJM, Lancet, JAMA, BMJ, AHA, ASH...)
+  # Nếu false: tìm kiếm toàn bộ PubMed nhưng ưu tiên xếp hạng cao các tạp chí trong danh sách
+  top_tier_only: false
+  
+  # Lọc theo nhóm tạp chí cụ thể (nếu để trống [] thì áp dụng tất cả các nhóm trong journals.yaml)
+  # Các nhóm khả dụng: ["general_medicine", "cardiology_aha", "hematology_ash", "biomedical_top"]
+  journal_groups: []
+  
+  # Lọc loại bài báo khoa học (Evidence-based hierarchy)
+  # Các loại: "guidelines", "systematic_reviews", "meta_analyses", "rct", "clinical_trials", "reviews", "all"
+  article_types:
+    - "guidelines"
+    - "systematic_reviews"
+    - "meta_analyses"
+    - "rct"
+    - "clinical_trials"
+    - "reviews"
+    
+  # Sắp xếp kết quả: "relevance" (độ liên quan), "pub_date" (mới nhất), "tier" (độ uy tín tạp chí)
+  sort_by: "tier"
+
+# Tích hợp Europe PMC để lấy link PDF Free Full Text
+europe_pmc:
+  enabled: true
+  fetch_fulltext_links: true
+
+# Tích hợp AI Tóm tắt & Tổng hợp lâm sàng (Clinical Synthesis)
+# Hỗ trợ Gemini API hoặc mô hình tóm tắt cấu trúc tự động
+ai_summary:
+  enabled: true
+  provider: "gemini" # hoặc "none" (chỉ trích xuất cấu trúc abstract)
+  model: "gemini-2.5-flash"
+  language: "vi" # vi (Tiếng Việt) hoặc en (Tiếng Anh)
+
+# Đường dẫn xuất file
+export:
+  output_dir: "./reports"
+  formats:
+    - "markdown" # Báo cáo chi tiết dạng Markdown
+    - "csv"      # Bảng tổng hợp theo dõi (Excel / Sheets)
+    - "bibtex"   # File trích dẫn tài liệu tham khảo (.bib)
+    - "json"     # Raw data
