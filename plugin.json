@@ -1,11 +1,14 @@
 {
-  "name": "med-evidence-search",
-  "displayName": "Medical Evidence Search",
-  "description": "Tự động tìm kiếm, phân loại và tổng hợp y văn chuyên ngành từ các nguồn uy tín hàng đầu: PubMed, NEJM, The Lancet, JAMA, BMJ, AHA (Circulation), ASH (Blood)...",
+  "name": "medical-literature-search",
+  "displayName": "Medical Literature Search & Evidence Synthesis",
+  "description": "Hệ thống tự động tìm kiếm, phân loại và tổng hợp y văn từ các tạp chí y khoa danh giá nhất thế giới (NEJM, The Lancet, JAMA, BMJ, Circulation, Stroke, JACC, Blood, JCO...). Tự động chuyển đổi câu hỏi lâm sàng thành cú pháp Boolean & MeSH chuẩn quốc tế trên PubMed, lọc theo tháp bằng chứng lâm sàng EBM, liên kết Europe PMC tải PDF toàn văn miễn phí (Open Access), tổng hợp bằng chứng lâm sàng chuyên sâu và xuất báo cáo đa định dạng (Markdown, BibTeX, CSV, JSON).",
   "version": "1.0.0",
+  "author": "BS. Nguyễn Vương Anh",
+  "logo": "assets/logo.svg",
   "suggestedPrompts": [
-    "Tìm kiếm các nghiên cứu mới nhất từ NEJM và The Lancet về [chủ đề]",
-    "Tổng hợp bằng chứng và hướng dẫn điều trị của AHA/ESC về [bệnh lý]",
-    "Tra cứu các thử nghiệm lâm sàng RCTs và bài báo Top-Tier về [thuốc/can thiệp]"
+    "Tìm kiếm y văn mới nhất từ các tạp chí Top-Tier về can thiệp lấy huyết khối cơ học trong đột quỵ thiếu máu não cấp",
+    "Tổng hợp bằng chứng lâm sàng về thuốc ức chế SGLT2 trong suy tim phân suất tống máu bảo tồn (HFpEF)",
+    "Tìm kiếm các nghiên cứu RCTs và Hướng dẫn điều trị (Guidelines) về kiểm soát huyết áp sau can thiệp tái thông mạch não",
+    "Tạo file trích dẫn BibTeX và danh mục bài báo phục vụ tổng quan y văn cho đề tài nghiên cứu"
   ]
 }

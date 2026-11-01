@@ -1,0 +1,7 @@
+# Medical Literature Auto Search Requirements
+# Note: Core CLI functions work with pure Python standard library out-of-the-box!
+# The packages below provide YAML configuration, interactive Web UI, and optional AI synthesis.
+
+pyyaml>=6.0.1
+requests>=2.31.0
+streamlit>=1.30.0
